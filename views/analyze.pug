@@ -1,0 +1,8 @@
+html
+  head
+    title= title
+    link(rel='stylesheet' href='/css/analyze.css')
+  body
+    each item, index in messages
+        p #{item.text + index}
+    a(href='/') 戻る

@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <link rel='stylesheet' href='/css/index.css'>
+        2020/11/7 北田瑛希
+    </head>
+    <body>
+        <div>
+            メッセージを入力してください
+        </div>
+        <form action="/api/messages" method="POST">
+            <input name = "message">
+            <button type = "submit">
+                送信
+            </button>
+        </form>
+        <a href="/analyze">
+            集計結果を見る
+        </a>
+    </body>
+</html>
