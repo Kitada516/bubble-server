@@ -7,7 +7,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 app.set('view engine', 'pug')
 
-const port = 4000;
+const port = 80;
 
 app.post('/api/messages/', async (req, res) => {
     const message = req.body.message;
