@@ -1,5 +1,9 @@
 <html>
     <head>
+        <!--
+            rel  -- 属性値を示す．"stylesheet"は
+            href -- 
+        -->
         <link rel='stylesheet' href='/css/index.css'>
         2020/11/7 北田瑛希
     </head>
@@ -7,13 +11,20 @@
         <div>
             メッセージを入力してください
         </div>
+        <!--
+            rel  -- rel属性値を示す．"stylesheet"はCSSを使用する際に必要な設定となる
+            href -- href属性値を示す．指定されたリンク先へ飛んだりファイルの情報を取得したりする
+        -->
         <form action="/api/messages" method="POST">
             <input name = "message">
+            <!-- name -- inputタグで入力された文字列にmessageという名前を付ける-->
             <button type = "submit">
+                <!-- type -- type属性値を示す．buttonタブではボタンの種類が指定できる．"submit"は送信ボタンとなる-->
                 送信
             </button>
         </form>
         <a href="/analyze">
+            <!-- href -- href属性値を示す．-->
             集計結果を見る
         </a>
     </body>

@@ -21,5 +21,4 @@ npx sequelize-cli model:generate --name Message --attributes text:string
 npx sequelize-cli db:migrate
 ```
 
-# 見出し
 
