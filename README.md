@@ -21,4 +21,7 @@ npx sequelize-cli model:generate --name Message --attributes text:string
 npx sequelize-cli db:migrate
 ```
 
+# Githubへのアップロード方法
 
+```
+```

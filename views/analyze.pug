@@ -3,9 +3,7 @@ html
     title= title
     link(rel='stylesheet' href='/css/analyze.css')
   body
-  　//-for文のようなもの．messagesの中のitemあるいはindexの値が入っている範囲でループする
     each item, index in messages
-    　　//-#{}内に指定の変数の値を代入すると表示される
-        p #{item.text + index}
-    //-htmlと同様にhrefでリンクやファイルを指定できる
+    　　p #{item.text + index}
+    
     a(href='/') 戻る
