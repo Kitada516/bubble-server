@@ -10,7 +10,7 @@ app.use(express.static('public'));
 //テンプレートエンジンpugを使えるようにする
 app.set('view engine', 'pug')
 
-const port = 4000;  //ポート番号を4000に設定
+const port = process.env.PORT || 3000;  //ポート番号を3000に設定
 
 app.post('/api/messages/', async (req, res) => {  //'api/messages/'というページに飛ぶと{}内の動作を行う
     const message = req.body.message;  //htmlファイルの'bodyタグ内にある変数message'の値をapp.js内の変数message'に代入
