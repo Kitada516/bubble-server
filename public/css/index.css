@@ -1,4 +1,13 @@
 /*divタグの文字の色を青にする*/
 div {
     color: blue;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+a {
+    text-align: center;
 }
